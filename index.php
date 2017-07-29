@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Creations By Carlee</title>
+<title><?php bloginfo('description') ?> | Creations By Carlee</title>
 <meta name="viewport" content="width=device-width" />
 <meta name="robots" content="noindex,nofollow" />
 <meta charset="utf-8">
@@ -9,14 +9,18 @@
 <script src="https://s3.amazonaws.com/menumaker/menumaker.min.js" type="text/javascript"></script>
 <script src="js/script.js"></script>
 <script src="js/main.js"></script>
-<link rel="icon" href="images/icon.png">
+<link rel="icon" href="<?php bloginfo('template_directory'); ?>/images/icon.png">
+<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
-<link rel="stylesheet" href="css/nav.css" />
-<link rel="stylesheet" href="css/form.css" />
-<link rel="stylesheet" href="css/main.css" />
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/nav.css" />
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/form.css" />
+<!-- Begin WP Head Function -->
+<?php wp_head(); ?>
+	
+<!-- End WP Head Function -->
 </head>
 
-<body>
+	<body <?php body_class(); ?>>
 <!-- START WRAPPER -->
 	<div class="header-layout">
 		<div class="transbox">
@@ -50,7 +54,7 @@
 			One of my former grooms, told me after his wedding: “Looking at your photos showed me all the wonderful moments I wouldn’t have remembered.”
 			I shoot weddings to ensure that couples never forget what made their day so special.</p>
 		</div>
-		<div><img src="images/family/family3.jpg" alt="image01" data-description="Image Text" /></div>
+		<div><img src="<?php bloginfo('template_directory'); ?>/images/family/family3.jpg" alt="image01" data-description="Image Text" /></div>
 		<div>
 			<h3>Senior/graduation photography</h3>
 			<p>Creations by Carlee stands for unobstructive, fashionable, storytelling Wedding Photography.
@@ -58,7 +62,7 @@
 			I shoot weddings to ensure that couples never forget what made their day so special.</p>
 		</div>
 		<div>
-			<img src="images/new-born/new5.jpg" alt="image01" data-description="Image Text" />
+			<img src="<?php bloginfo('template_directory'); ?>/images/new-born/new5.jpg" alt="image01" data-description="Image Text" />
 		</div>
   </section>
   <!-- END LEFT COL -->
@@ -67,7 +71,7 @@
   <!-- START RIGHT COL -->
   <aside class="services">
 		<div>
-			<img src="images/wedding/wedding2.jpg" alt="image01" data-description="Image Text" />
+			<img src="<?php bloginfo('template_directory'); ?>/images/wedding/wedding2.jpg" alt="image01" data-description="Image Text" />
 		</div>
 		<div>
 			<h3>Family photography</h3>
@@ -77,7 +81,7 @@
 				I shoot weddings to ensure that couples never forget what made their day so special.</p>
 		</div>
 		<div>
-			<img src="images/graduation/grad2.jpg" alt="image01" data-description="Image Text" />
+			<img src="<?php bloginfo('template_directory'); ?>/images/graduation/grad2.jpg" alt="image01" data-description="Image Text" />
 		</div>
 		<div>
 			<h3>New Born photos</h3>
@@ -90,7 +94,8 @@
    
   </aside>
   <!-- END RIGHT COL -->
-  </div> <!-- This is opened in the header.php-->
+		<small>index.php</small>
+  </div> 
   <!-- END WRAPPER -->
 <!-- START Footer -->
 <footer>
@@ -108,5 +113,13 @@ function myFunction() {
     }
 }
 </script>
+		
+<!-- Begin WP Footer -->
+
+<?php wp_footer(); ?>
+		
+<!-- End WP Footer-->
+		
+		
 </body>
 </html>
