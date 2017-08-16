@@ -31,7 +31,11 @@ div#content {
 div#sidebar{
 	float: right;
 	max-width: 22%;
+	text-align: center;
+}
 
+div#pull-quote {
+	  border: solid #5691ea;
 }
 
 div.header-layout {
