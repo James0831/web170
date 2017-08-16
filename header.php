@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <title><?php bloginfo('description') ?> | Creations By Carlee</title>
+<meta name="description" content="<?php echo get_the_excerpt(); ?>">
 <meta name="viewport" content="width=device-width" />
 <meta name="robots" content="noindex,nofollow" />
 <meta charset="utf-8">
