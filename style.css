@@ -120,7 +120,10 @@ nav.menu-main-menu-container li.icon {
   }
 }
 
-
+section.widget-item {
+	max-width: 30%;
+	float: left;
+}
 div.about {
 	font-size: 18px;
 	line-height: 170%;
