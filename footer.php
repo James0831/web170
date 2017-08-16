@@ -23,6 +23,5 @@ function myFunction() {
 		
 <!-- End WP Footer-->
 		
-		
 </body>
 </html>

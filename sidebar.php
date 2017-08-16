@@ -28,5 +28,6 @@
  	<?php wp_list_categories(array('title_li' => '',));  ?>
     </ul>
     <?php endif; ?>
+	
 </div>
 <!-- End Sidebar --> 

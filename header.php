@@ -23,12 +23,12 @@
 
 <body <?php body_class(); ?>>
 <!-- START WRAPPER -->
-<div class="header-layout">
-	<div class="transbox">
-		<h1 class="header-text">Creations By Carlee</h1>
-		<p class="header-text">In the heart of the image.</p>
+	<div class="header-layout">
+		<div class="transbox">
+			<h1 class="header-text">Creations By Carlee</h1>
+			<p class="header-text">In the heart of the image.</p>
+		</div>
 	</div>
-</div>
 
 <!-- Begin Main Navigation -->
 <?php wp_nav_menu(array('theme_location' => 'main-menu', 'container' => 'nav',)); ?>
