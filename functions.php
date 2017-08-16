@@ -7,6 +7,11 @@ Description: This is a Demo WordPress Theme for WEB170
 Version: 1.0
 */
 
+// Register Sidebars
+register_sidebar(array('before_widget' => '<div id="%1$s" class="widget %2$s">', 'after-widget' => '</div>'));
+//
+
+
 // Register Menus
 register_nav_menus(array('main-menu' => 'Main Menu'));
 //
