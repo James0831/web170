@@ -35,7 +35,8 @@ div#sidebar{
 }
 
 div#pull-quote {
-	  border: solid #5691ea;
+	border: solid #5691ea;
+	font-style: italic;
 }
 
 div.header-layout {

@@ -36,6 +36,5 @@
 	<?php endif; ?>
 	</div>
 	<!-- End Pull Quote -->
-	
 </div>
 <!-- End Sidebar --> 
