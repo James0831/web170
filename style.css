@@ -11,15 +11,28 @@ Version: 1.0
 
 body {
 	margin: 0;
-	background:#1F1F1F url(../images/pattern.png) repeat top left;
+	background:#b3b3b3 
 }
 div.wrapper {
 	max-width: 1280px;
-  min-width: 320px;
+  	min-width: 320px;
 	margin: auto;
 	overflow: auto;
-  background-color: #d0d0d0;
+	background-color: #d0d0d0;
+	padding: 2em;
+
 	}
+div#content {
+	float: left;
+	max-width: 73%;
+
+}
+
+div#sidebar{
+	float: right;
+	max-width: 22%;
+
+}
 
 div.header-layout {
   background-image: url('../images/header.jpg');
@@ -36,6 +49,77 @@ div.transbox {
     opacity: 0.6;
     filter: alpha(opacity=60); /* For IE8 and earlier */
 }
+
+nav.menu-main-menu-container{
+	list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav.menu-main-menu-container li{
+	float: left;
+}
+
+
+/* Style the links inside the list items */
+nav.menu-main-menu-container li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+/* Change background color to indicate selected state*/
+nav.menu-main-menu-container li a.current {
+  background-color: #666;
+}
+
+/* Change background color of links on hover */
+nav.menu-main-menu-container li a:hover {
+  background-color: #555;
+}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+nav.menu-main-menu-container li.icon {
+  display: none;
+}
+
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:870px) {
+  nav.menu-main-menu-container li:not(:first-child) {
+    display: none;
+  }
+  nav.menu-main-menu-container li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  nav.menu-main-menu-container.responsive {
+    position: relative;
+  }
+  nav.menu-main-menu-container.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  nav.menu-main-menu-container.responsive li {
+    float: none;
+    display: inline;
+  }
+  nav.menu-main-menu-container.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
 
 div.about {
 	font-size: 18px;

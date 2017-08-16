@@ -7,5 +7,11 @@ Description: This is a Demo WordPress Theme for WEB170
 Version: 1.0
 */
 
+// Register Menus
+register_nav_menus(array('main-menu' => 'Main Menu'));
+//
+
+
+	
 
 ?>

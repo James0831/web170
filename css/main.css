@@ -1,7 +1,6 @@
 /* FP STYLES */
 body {
 	margin: 0;
-	background:#1F1F1F url(../images/pattern.png) repeat top left;
 }
 div.wrapper {
 	max-width: 1280px;
@@ -12,9 +11,7 @@ div.wrapper {
 	}
 
 div.header-layout {
-  background-image: url('../images/header.jpg');
-  background-size: cover;
-	min-height: 80vh;
+	min-height: 30vh;
   background-position: center;
   background-attachment: fixed;
 	margin: 0;
