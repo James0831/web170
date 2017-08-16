@@ -37,7 +37,7 @@ div#sidebar{
 div.header-layout {
   background-image: url('../images/header.jpg');
   background-size: cover;
-	min-height: 80vh;
+	min-height: 40vh;
   background-position: center;
   background-attachment: fixed;
 	margin: 0;
@@ -119,6 +119,25 @@ nav.menu-main-menu-container li.icon {
     text-align: left;
   }
 }
+
+#content img {
+	border: 1px solid #000;
+	padding: 4px;	
+}
+		
+#content img.featured {
+	margin-bottom: 10px;
+}
+
+#content img.size-thumbnail {
+	float: left;
+	margin-right: 20px;
+}
+#content article {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
 
 section.widget-item {
 	max-width: 30%;
